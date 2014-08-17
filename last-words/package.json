@@ -1,0 +1,10 @@
+{
+  "name": "last-words",
+  "description": "the last words of condemned prisoners in texas.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "csv": "0.3.x",
+    "underscore": "1.4.4"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "modern-executions",
+  "description": "an interactive graph showing the number of executions by year from 1977 to 2014, which can be broken out in a variety of ways.",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "csv": "0.3.x",
+    "underscore": "1.4.4"
+  }
+}

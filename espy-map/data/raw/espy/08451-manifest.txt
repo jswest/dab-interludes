@@ -1,0 +1,61 @@
+File Manifest for ICPSR 8451
+
+Espy, M. Watt, and John Ortiz Smykla. EXECUTIONS IN THE UNITED STATES,
+1608-2002: THE ESPY FILE. 4th ICPSR ed. Compiled by M. Watt Espy and John
+Ortiz Smykla, University of Alabama. Ann Arbor, MI: Inter-university
+Consortium for Political and Social Research [producer and distributor],
+2004. doi:10.3886/ICPSR08451.v4
+
+Details on the version history can be found below the file listings.
+
+
+Study-level Documentation
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    08451-related_literature.txt        -       -         -       2014-05-03  -
+
+    08451-manifest.txt                  -       -         -       2014-05-04  -
+
+
+DS0001 Executions in the United States, 1608-2002:  The ESPY File
+
+    Filename                            Record  Record    Var.    Date        MD5
+                                        Length  Count     Count   Updated     Checksum
+
+    08451-0001-Codebook.pdf             -       -         -       2004-02-27  d7ef879ff011ca6577351f4926eff2bb
+
+    08451-0001-Data.dta                 -       15,269    21      2005-03-11  c0751ee5326dd6b8d2e0bbb77daf6c9c
+
+    08451-0001-Data.por                 -       15,269    21      2005-03-11  dd951df7ebee414f8fe7fccc4a435dde
+
+    08451-0001-Data.txt                 73      15,269    21      2004-03-05  f469c82e9200b553dcb4107a22cbc834
+
+    08451-0001-Data.xpt                 -       15,269    21      2005-03-11  b442838cda7cb80abb739f1c603b25d0
+
+    08451-0001-Setup.dct                -       -         -       2005-03-11  7f978054ea8552c8181237cfaa441934
+
+    08451-0001-Setup.do                 -       -         -       2005-03-11  16f0fef4a2e10c07d43f365c7b4e5db0
+
+    08451-0001-Setup.sas                -       -         -       2004-02-27  5f66d040b4bbf2481b5cea225bd1ecbc
+
+    08451-0001-Setup.sps                -       -         -       2004-02-27  190ce2056c4eb545a1cabf4a2c36e670
+
+    08451-0001-Supplemental_syntax.do   -       -         -       2005-03-11  0240693b897ae36cab04ac982d94c4b1
+
+    08451-0001-Supplemental_syntax.sas  -       -         -       2005-03-11  53260f2c7bda7da879b3eb9ab2de2cfa
+
+
+Version History
+
+2005-11-04  On 2005-03-14 new files were added to one  or  more datasets.
+These files included additional setup files as well  as one or more of the
+following: SAS  program, SAS transport, SPSS portable,   and Stata system
+files. The  metadata record was revised  2005-11-04 to  reflect these
+additions.  2004-02-27 Data from the years 1992 through 2002 have been
+added to the data file. The SPSS and SAS data definition statements   have
+been updated accordingly and Part 2 of this study, old SAS   data
+definition statements will be removed, leaving all files in only   one
+part. The ASCII codebook has also been updated and converted to a  PDF
+file.

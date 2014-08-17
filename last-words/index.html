@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Last Words</title>
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <style>
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: rgb(35,31,32);
+}
+
+h1, h2, h3 {
+  color: #8c7c80;
+  font-family: "Source Sans Pro Black";
+  font-size: 44px;
+  line-height: 1;
+  text-transform: uppercase; }
+
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  display: block;
+  font-family: "Source Sans Pro Extra Light"; }
+  button:focus {
+    outline: none; }
+
+svg g.bubble-wrapper {
+  cursor: pointer; }
+  svg g.bubble-wrapper circle {
+    fill: #463e40;
+    transition: all 500ms; }
+  svg g.bubble-wrapper.active circle, svg g.bubble-wrapper:hover circle {
+    fill: #00b3ff; }
+  svg g.bubble-wrapper.active.parent circle, svg g.bubble-wrapper:hover.parent circle {
+    fill: none; }
+  svg g.bubble-wrapper text {
+    fill: white;
+    font-family: "Source Sans Pro Extra Light";
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-anchor: middle;
+    text-transform: uppercase; }
+  svg g.bubble-wrapper.parent circle {
+    fill: none; }
+  svg g.bubble-wrapper.parent circle:hover {
+    fill: none; }
+
+.x {
+  background-image: url("/images/big-x.png");
+  cursor: pointer;
+  position: absolute;
+  top: 88px;
+  right: 44px;
+  width: 100px;
+  height: 100px; }
+
+p {
+  color: #d2bbc0;
+  font-family: "PT Serif", "Times New Roman";
+  font-size: 15px;
+  line-height: 33px;
+  margin-bottom: 33px; }
+
+.words-overlay {
+  background-color: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3; }
+  .words-overlay .words {
+    margin-top: 44px;
+    margin-left: 44px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+    overflow-y: scroll;
+    width: 600px;
+    height: 100%; }
+    .words-overlay .words h1 {
+      font-size: 44px;
+      margin-bottom: 44px;
+      text-transform: uppercase; }
+    .words-overlay .words br {
+      height: 33px; }
+    .words-overlay .words p {
+      color: #231f20;
+      margin-bottom: 0;
+      padding-bottom: 88px;
+      width: 100%; }
+
+
+    </style>
+  </head>
+  <body>
+    <script>
+DAB = {};
+    </script>
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/underscore.min.js"></script>
+    <script src="/js/vendor/d3.min.js"></script>  
+    <script src="/js/vendor/topojson.min.js"></script> 
+    <script src="js/app.js"></script>
+    <script>
+$(document).ready(function () {
+  var viz = new DAB.LastWords($('body'));
+  viz.build();
+});
+    </script>
+  </body>
+</html>

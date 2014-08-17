@@ -1,0 +1,32 @@
+dictionary {
+*****************************************************************
+*
+*  Warning: Edit this file at your own risk
+*
+*****************************************************************
+_lines(1)
+
+_line(1)
+
+_column(1)     int   V1                 %4f    "ICPSR STUDY NUMBER-8451"
+_column(5)     int   V2       :V2       %1f    "ICPSR EDITION NUMBER"
+_column(6)     int   V3       :V3       %1f    "ICPSR PART NUMBER"
+_column(7)     long  V4                 %6f    "CASE NUMBER"
+_column(13)    int   V5       :V5       %1f    "RACE OF OFFENDER"
+_column(14)    int   V6       :V6       %2f    "AGE AT EXECUTION"
+_column(16)    str28 V7                 %28s   "NAME OF OFFENDER"
+_column(44)    int   V8       :V8       %1f    "PLACE OF EXECUTION"
+_column(45)    int   V9       :V9       %1f    "JURISDICTION OF EXECUTION"
+_column(46)    int   V10      :V10      %2f    "CRIME COMMITTED"
+_column(48)    int   V11      :V11      %2f    "METHOD OF EXECUTION"
+_column(50)    int   V12      :V12      %2f    "DATE: DAY"
+_column(52)    int   V13      :V13      %2f    "DATE: MONTH"
+_column(54)    int   V14                %4f    "DATE: YEAR"
+_column(58)    int   V15      :V15      %2f    "CHECK DIGIT"
+_column(60)    int   V16      :V16      %2f    "STATE OF EXECUTION"
+_column(62)    long  V17                %5f    "COUNTY OF CONVICTION"
+_column(67)    int   V18      :V18      %2f    "ICPSR STATE CODE"
+_column(69)    int   V19      :V19      %1f    "SEX OF OFFENDER"
+_column(70)    int   V20      :V20      %1f    "COMPENSATION CASE"
+_column(71)    int   V21      :V21      %3f    "OCCUPATION OF OFFENDER"
+}

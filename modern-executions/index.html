@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modern Executions</title>
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <style>
+
+html,
+body{
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: rgb(35,31,32);
+}
+
+svg .x-axis path.domain,
+svg .y-axis path.domain {
+  fill: none; }
+svg .x-axis text,
+svg .y-axis text {
+  fill: white;
+  font-family: "Source Sans Pro Extra Light";
+  font-size: 15px; }
+svg .y-axis line {
+  stroke: rgba(255,255,255,.03);
+  stroke-width: 2px;
+}
+svg rect {
+  cursor: pointer;
+}
+
+.inspector {
+  background-color: rgba(0,0,0,.55);
+  border: 1px solid rgb(255,255,255);
+  position: absolute;
+  width: 200px;
+  height: 44px; }
+  .inspector li {
+    color: white;
+    font-size: 13px;
+    line-height: 22px;
+    font-family: "Source Sans Pro Extra Light";
+    font-weight: 400;
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+    height: 22px; }
+  .inspector th,
+  .inspector td {
+    color: white;
+    float: left;
+    font-size: 13px;
+    line-height: 22px;
+    text-transform: uppercase;
+    height: 22px; }
+  .inspector th {
+    font-family: "Source Sans Pro Extra Light";
+    padding-right: 5px; }
+  .inspector td {
+    font-family: "Source Sans Pro Black";
+    padding-left: 5px; }
+
+table.key {
+  position: absolute;
+  top: 44px;
+  right: 0;
+  width: 222px;
+  z-index: 2; }
+  table.key tr {
+    height: 22px; }
+  table.key td.colorblock {
+    padding-left: 0;
+    width: 22px;
+    height: 22px; }
+  table.key td {
+    color: #d2bbc0;
+    font-family: "Source Sans Pro Extra Light";
+    font-size: 11px;
+    line-height: 22px;
+    padding-left: 22px;
+    text-transform: uppercase;
+    width: 178px;
+    height: 22px; }
+
+ul.controls {
+  position: absolute;
+  top: 44px;
+  left: 44px;
+  width: 264px;
+  z-index: 2; }
+  ul.controls li {
+    background-color: #463e40;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: "Source Sans Pro Extra Light";
+    font-size: 14.66667px;
+    line-height: 44px;
+    list-style: none;
+    margin-bottom: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 44px;
+    transition: all 500ms; }
+    ul.controls li:hover {
+      background-color: black; }
+    ul.controls li.active {
+      background-color: black;
+      font-family: "Source Sans Pro Black"; }
+  ul.controls.clicked {
+    height: auto; }
+    </style>
+  </head>
+  <body>
+    <script>
+DAB = {};
+    </script>
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/vendor/underscore.min.js"></script>
+    <script src="/js/vendor/d3.min.js"></script>   
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+$(document).ready(function () {
+  var viz = new DAB.ModernExecutions($('body'));
+  viz.build();
+});
+    </script>
+  </body>
+</html>
