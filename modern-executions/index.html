@@ -3,8 +3,12 @@
   <head>
     <title>Modern Executions</title>
     <link rel="stylesheet" href="/css/fonts.css" type="text/css">
+    <meta name="viewport" content="width=device-width">
     <style>
-
+* {
+  margin: 0;
+  padding: 0;
+}
 html,
 body{
   width: 100%;
@@ -14,14 +18,15 @@ body {
   background-color: rgb(35,31,32);
 }
 
-svg .x-axis path.domain,
-svg .y-axis path.domain {
-  fill: none; }
-svg .x-axis text,
-svg .y-axis text {
-  fill: white;
+
+.axis path.domain {
+  fill: none;
+}
+.axis text {
+  fill: rgb(255,255,255);
   font-family: "Source Sans Pro Extra Light";
-  font-size: 15px; }
+  font-size: 12px;
+}
 svg .y-axis line {
   stroke: rgba(255,255,255,.03);
   stroke-width: 2px;
@@ -61,19 +66,19 @@ svg rect {
     font-family: "Source Sans Pro Black";
     padding-left: 5px; }
 
-table.key {
+table.legend {
   position: absolute;
   top: 44px;
   right: 0;
   width: 222px;
   z-index: 2; }
-  table.key tr {
+  table.legend tr {
     height: 22px; }
-  table.key td.colorblock {
+  table.legend td.colorblock {
     padding-left: 0;
     width: 22px;
     height: 22px; }
-  table.key td {
+  table.legend td {
     color: #d2bbc0;
     font-family: "Source Sans Pro Extra Light";
     font-size: 11px;
@@ -120,11 +125,12 @@ DAB = {};
     <script src="/js/vendor/underscore.min.js"></script>
     <script src="/js/vendor/d3.min.js"></script>   
     <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="js/keys.json.js"></script>
     <script src="js/modern-executions.js"></script>
     <script>
 $(document).ready(function () {
   var viz = new DAB.ModernExecutions($('body'));
-  viz.build();
+  //viz.build();
 });
     </script>
   </body>
